@@ -10,3 +10,13 @@ Importing Data: beaches.csv
 # rachael cooper
 beaches <- read.csv("beaches.csv")
 ```
+
+Setting the aes/adding Labels
+```{r}
+library(ggplot2)
+library(dplyr)
+
+beaches<-beaches%>%na.omit()%>%group_by(year)
+ggplot(beaches, aes(x=year, y=rainfall))+geom_bar(stat='identity')
+```
+
