@@ -1,0 +1,7 @@
+---
+title: "Lab3-Graph1"
+author: "Rachael Cooper"
+date: "9/8/2021"
+output: html_document
+---
+
