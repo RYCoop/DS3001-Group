@@ -17,6 +17,6 @@ library(ggplot2)
 library(dplyr)
 
 beaches<-beaches%>%na.omit()%>%group_by(year)
-ggplot(beaches, aes(x=year, y=rainfall))+geom_bar(stat='identity', colour="orange", fill="blue") + theme(axis.text.x =element_text(angle = 45))
+ggplot(beaches, aes(x=year, y=rainfall)) +geom_bar(stat='identity', colour="orange", fill="blue") + theme(axis.text.x =element_text(angle = 45))+labs(title = "Rainfall vs Year" ) + theme(plot.title = element_text(hjust = 0.5))
 ```
 
