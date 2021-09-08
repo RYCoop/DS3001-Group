@@ -5,3 +5,8 @@ date: "9/8/2021"
 output: html_document
 ---
 
+Importing Data: beaches.csv
+```{r}
+beaches <- read.csv("beaches.csv")
+```
+
